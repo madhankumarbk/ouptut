@@ -1,0 +1,29 @@
+What is the output for the following program?
+main() 
+{
+int a[8][10],c=0,i,j;
+for(i=0;i<10;i++)
+     for(j=0;j<8;j++)
+            a[j][i]=c++;
+printf(“%d”a[3][6]);
+}
+OUTPUT
+51
+Explanation:
+Initially  a[0][0]=0
+               a[1][0]=1
+                .
+               a[7][0]=7
+                .
+             a[7][1]=15
+ 	       .
+	   a[7][2]=23
+            a[7][3]=31
+          . 
+          a[7][4]=39
+         .
+	a[7][5]=47
+	a[0][6]=48
+	a[1][6]=49
+	a[2][6]=50
+	a[3][6]=51
